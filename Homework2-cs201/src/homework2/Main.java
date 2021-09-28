@@ -7,6 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 //		String fn, String ln, int id, double gpa, boolean hol, int gradeCnt, double rawG)
 		
+		System.out.println(3-1 == 2);
+		
 		Student student1 = new Student("Joe", "Smith", 12345, 0.0, false, 0, 0.0);
 		Student student2 = new Student("Jane", "Doe", 54321, 4.0, false, 1, 100.0);
 		Student student3 = new Student("Mary", "Sue", 12321, 3.0, false, 2, 160.0);
@@ -25,20 +27,23 @@ public class Main {
 		System.out.println("Student 1 got a new grade in and now has a gpa of " + student1.gpaUpdate(59));
 		System.out.println("Student 1 got a new grade in and now has a gpa of " + student1.gpaUpdate(100));
 		System.out.println("Student 1 has a gpa of " + student1.getGpa() + " and is " + student1.holdCheck()); //student1 has a sub 3.0 gpa and is placed on hold
-		
+		System.out.println();
 		
 		//3. Sort a set of student objects
 		//By name
 		Student.display(students);
 		Student.sortByName(students);
+		System.out.println();
 		System.out.println("Sorted by last name");
 		Student.display(students);
 		//By student ID
 		Student.sortById(students);
+		System.out.println();
 		System.out.println("Sorted by ID #");
 		Student.display(students);
 		//By GPA (high to low)
 		Student.sortByGpa(students);
+		System.out.println();
 		System.out.println("Sorted by GPA");
 		Student.display(students);
 		
@@ -59,16 +64,29 @@ public class Main {
 		System.out.println("Sorting random integers low to high:");
 		sortIntDec(randInts);
 		System.out.println(Arrays.toString(randInts));
+
+		System.out.println();
+		System.out.println();
 		
-		for(int i = 0; i < 50; i++) {
-//			char randChar = (char) ((int)(Math.random()*100)%94+33);
+		//2. Sort a set of characters
+		char randChars[] = new char[10];
+		for(int i = 0; i < 10; i++) {
+			randChars[i] = (char) ((int)(Math.random()*100)%94+33);
+			System.out.print(": \'" + randChars[i] + "\', ");
+		}
+		System.out.println();
+		System.out.println("Sorting random characters");
+		Arrays.sort(randChars);
+		for(int i = 0; i < randChars.length; i++) {
+			System.out.print(": \'" + randChars[i] + "\', ");
+		}
+		
 //			System.out.println( (99%94));
 //			System.out.println(randChar);
-			System.out.println((Math.random()*100));
-			System.out.println((Math.random()*100)%94);
-			System.out.println((Math.random()*100)%94+33);
-			System.out.println();
-		}
+//			System.out.println((Math.random()*100));
+//			System.out.println((Math.random()*100)%94);
+//			System.out.println((Math.random()*100)%94+33);
+		
 		
 		
 		
@@ -104,7 +122,6 @@ public class Main {
 		}
 	
 	
-	//test!
 	
 }
 	
