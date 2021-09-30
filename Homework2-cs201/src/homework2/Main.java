@@ -7,8 +7,6 @@ public class Main {
 	public static void main(String[] args) {
 //		String fn, String ln, int id, double gpa, boolean hol, int gradeCnt, double rawG)
 		
-		System.out.println(3-1 == 2);
-		
 		Student student1 = new Student("Joe", "Smith", 12345, 0.0, false, 0, 0.0);
 		Student student2 = new Student("Jane", "Doe", 54321, 4.0, false, 1, 100.0);
 		Student student3 = new Student("Mary", "Sue", 12321, 3.0, false, 2, 160.0);
@@ -81,18 +79,12 @@ public class Main {
 			System.out.print(": \'" + randChars[i] + "\', ");
 		}
 		
-//			System.out.println( (99%94));
-//			System.out.println(randChar);
-//			System.out.println((Math.random()*100));
-//			System.out.println((Math.random()*100)%94);
-//			System.out.println((Math.random()*100)%94+33);
-		
-		
 		
 		
 		
 
  }
+	
 	//sorts randInts ascending
 	public static void sortIntAsc(int[] rand) {
 	int min;
