@@ -2,7 +2,7 @@ package homework2;
 
 import java.util.Arrays;
 
-public class Main {
+public class Main { //test
 
 	public static void main(String[] args) {
 //		String fn, String ln, int id, double gpa, boolean hol, int gradeCnt, double rawG)
