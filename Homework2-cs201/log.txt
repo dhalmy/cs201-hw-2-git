@@ -1,1 +1,11 @@
-Sorting a random set of new integers
+1. Sorting a random set of new integers
+Random set of integers: 6 0 0 5 2 
+Sorting random integers high to low:
+[6, 5, 2, 0, 0]
+Sorting random integers low to high:
+[0, 0, 2, 5, 6]
+
+
+2. Sorting random characters
+Random set of characters: : '{', : '6', : '@', : '%', : 'M', : '1', : 'a', : 'b', : '=', : 'q', 
+Sorted set of characters: : '%', : '1', : '6', : '=', : '@', : 'M', : 'a', : 'b', : 'q', : '{', 

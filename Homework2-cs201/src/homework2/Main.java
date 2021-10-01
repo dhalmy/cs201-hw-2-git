@@ -29,10 +29,49 @@ public class Main {
 		System.out.println();
 		
 		try {
-			FileWriter fw = new FileWriter("output.txt", false);
+			FileWriter fw = new FileWriter("log.txt", false);
 			PrintWriter pw = new PrintWriter(fw);
 			
-			pw.println("line 1");
+		
+		//1. Sort a random set of integers
+		System.out.println();
+		System.out.println("_____________________________");
+		System.out.println("Sorting a random set of new integers"); pw.println(("1. Sorting a random set of new integers"));
+		System.out.print("Random set of integers: "); pw.print("Random set of integers: ");
+		int randInts[] = new int[5];
+		for(int i = 0; i < 5; i++) {
+		randInts[i] = (int)(Math.random()*10);
+		System.out.print(randInts[i] + " "); pw.print(randInts[i] + " ");
+			}
+		System.out.println(); pw.println();
+		System.out.println("Sorting random integers high to low:"); pw.println("Sorting random integers high to low:");
+		sortIntAsc(randInts);
+		System.out.println(Arrays.toString(randInts)); pw.println(Arrays.toString(randInts));
+		
+		System.out.println("Sorting random integers low to high:"); pw.println("Sorting random integers low to high:");
+		sortIntDec(randInts);
+		System.out.println(Arrays.toString(randInts)); pw.println(Arrays.toString(randInts));
+
+		System.out.println(); pw.println();
+		System.out.println(); pw.println();
+		
+		//2. Sort a set of characters
+		char randChars[] = new char[10];
+		for(int i = 0; i < 10; i++) {
+			randChars[i] = (char) ((int)(Math.random()*100)%94+33);
+//			System.out.print(": \'" + randChars[i] + "\', ");
+		}
+		System.out.println();
+		System.out.println("2. Sorting random characters");  System.out.print("Random set of characters: "); pw.println("2. Sorting random characters"); pw.print("Random set of characters: ");
+		for(int i = 0; i < randChars.length; i++) {
+			System.out.print(": \'" + randChars[i] + "\', "); pw.print(": \'" + randChars[i] + "\', ");
+		}
+		System.out.println(); pw.println();
+		System.out.print("Sorted set of characters: "); pw.print("Sorted set of characters: ");
+		Arrays.sort(randChars);
+		for(int i = 0; i < randChars.length; i++) {
+			System.out.print(": \'" + randChars[i] + "\', "); pw.print(": \'" + randChars[i] + "\', ");
+		}
 		
 		
 		//3. Sort a set of student objects
@@ -53,39 +92,6 @@ public class Main {
 		System.out.println("Sorted by GPA");
 		Student.display(students);
 		
-		//1. Sort a random set of integers
-		System.out.println();
-		System.out.println("_____________________________");
-		System.out.println("Sorting a random set of new integers"); pw.print(("Sorting a random set of new integers"));
-		System.out.print("Random set of integers: ");
-		int randInts[] = new int[5];
-		for(int i = 0; i < 5; i++) {
-		randInts[i] = (int)(Math.random()*10);
-		System.out.print(randInts[i] + " ");
-			}
-		System.out.println("Sorting random integers high to low:");
-		sortIntAsc(randInts);
-		System.out.println(Arrays.toString(randInts));
-		
-		System.out.println("Sorting random integers low to high:");
-		sortIntDec(randInts);
-		System.out.println(Arrays.toString(randInts));
-
-		System.out.println();
-		System.out.println();
-		
-		//2. Sort a set of characters
-		char randChars[] = new char[10];
-		for(int i = 0; i < 10; i++) {
-			randChars[i] = (char) ((int)(Math.random()*100)%94+33);
-			System.out.print(": \'" + randChars[i] + "\', ");
-		}
-		System.out.println();
-		System.out.println("Sorting random characters");
-		Arrays.sort(randChars);
-		for(int i = 0; i < randChars.length; i++) {
-			System.out.print(": \'" + randChars[i] + "\', ");
-		}
 		
 		pw.close();
 		}

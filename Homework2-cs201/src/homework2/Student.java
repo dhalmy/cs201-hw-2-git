@@ -159,10 +159,12 @@ public class Student {
 		}
 	}
 	
-	public static void display(Student arr[]) {
+	public static String display(Student arr[]) {
+		String output = "";
 		for(int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i].toString());
+			output += arr[i].toString() + "\n";
 		}
+		return 
 	}
 	
 	public String toString() {
