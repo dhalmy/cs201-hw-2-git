@@ -164,7 +164,7 @@ public class Student {
 		for(int i = 0; i < arr.length; i++) {
 			output += arr[i].toString() + "\n";
 		}
-		return 
+		return output;
 	}
 	
 	public String toString() {

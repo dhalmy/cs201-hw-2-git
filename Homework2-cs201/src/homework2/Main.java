@@ -64,13 +64,15 @@ public class Main {
 		System.out.println();
 		System.out.println("2. Sorting random characters");  System.out.print("Random set of characters: "); pw.println("2. Sorting random characters"); pw.print("Random set of characters: ");
 		for(int i = 0; i < randChars.length; i++) {
-			System.out.print(": \'" + randChars[i] + "\', "); pw.print(": \'" + randChars[i] + "\', ");
+			System.out.print(" \'" + randChars[i] + "\', "); pw.print(" \'" + randChars[i] + "\', ");
 		}
 		System.out.println(); pw.println();
 		System.out.print("Sorted set of characters: "); pw.print("Sorted set of characters: ");
-		Arrays.sort(randChars);
+		sortChars(randChars);
+//		Arrays.sort(randChars);
+		
 		for(int i = 0; i < randChars.length; i++) {
-			System.out.print(": \'" + randChars[i] + "\', "); pw.print(": \'" + randChars[i] + "\', ");
+			System.out.print(" \'" + randChars[i] + "\', "); pw.print(" \'" + randChars[i] + "\', ");
 		}
 		System.out.println(); pw.println(); System.out.println(); pw.println();
 		
@@ -79,21 +81,21 @@ public class Main {
 		//3. Sort a set of student objects 
 		System.out.println("3. Sort a set of student objects"); pw.println("3. Sort a set of student objects");
 		//By name
-		Student.display(students); pw.println(Student.display(students));
+		System.out.println(Student.display(students)); pw.println(Student.display(students)); 
 		Student.sortByName(students);
-		System.out.println();
-		System.out.println("Sorted by last name");
-		Student.display(students);
+		System.out.println(); pw.println();
+		System.out.println("Sorted by last name"); pw.println("Sorted by last name");
+		System.out.println(Student.display(students)); pw.println(Student.display(students)); 
 		//By student ID
 		Student.sortById(students);
-		System.out.println();
-		System.out.println("Sorted by ID #");
-		Student.display(students);
+		System.out.println(); pw.println();
+		System.out.println("Sorted by ID #"); pw.println("Sorted by ID #");
+		System.out.println(Student.display(students)); pw.println(Student.display(students)); 
 		//By GPA (high to low)
 		Student.sortByGpa(students);
-		System.out.println();
-		System.out.println("Sorted by GPA");
-		Student.display(students);
+		System.out.println(); pw.println();
+		System.out.println("Sorted by GPA"); pw.println("Sorted by GPA");
+		System.out.println(Student.display(students)); pw.println(Student.display(students)); 
 		
 		
 		pw.close();
@@ -132,6 +134,20 @@ public class Main {
 			rand[min] = temp;
 		  }
 		}
+		
+	//sorts characters
+		public static void sortChars(char[] rand) {
+			int min;
+			for(int i = 0; i < rand.length-1; i++) {
+				min = i;
+				for(int j = i + 1; j < rand.length; j++) {
+					if(rand[j] < rand[min]) min = j;
+				}
+				char temp = rand[i];
+				rand[i] = rand[min];
+				rand[min] = temp;
+			  }
+			}
 	
 	
 	

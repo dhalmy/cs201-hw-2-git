@@ -1,11 +1,43 @@
 1. Sorting a random set of new integers
-Random set of integers: 6 0 0 5 2 
+Random set of integers: 2 2 9 1 2 
 Sorting random integers high to low:
-[6, 5, 2, 0, 0]
+[9, 2, 2, 2, 1]
 Sorting random integers low to high:
-[0, 0, 2, 5, 6]
+[1, 2, 2, 2, 9]
 
 
 2. Sorting random characters
-Random set of characters: : '{', : '6', : '@', : '%', : 'M', : '1', : 'a', : 'b', : '=', : 'q', 
-Sorted set of characters: : '%', : '1', : '6', : '=', : '@', : 'M', : 'a', : 'b', : 'q', : '{', 
+Random set of characters:  'k',  '"',  'b',  'y',  '`',  'z',  '?',  '/',  'C',  'l', 
+Sorted set of characters:  '"',  '/',  '?',  'C',  '`',  'b',  'k',  'l',  'y',  'z', 
+
+3. Sort a set of student objects
+Name: Smith, Joe 	 | ID: 12345	| GPA: 3.0	| Hold Status: is not on hold
+Name: Doe, Jane 	 | ID: 54321	| GPA: 4.0	| Hold Status: is not on hold
+Name: Sue, Mary 	 | ID: 12321	| GPA: 3.0	| Hold Status: is not on hold
+Name: Brown, Sam 	 | ID: 11111	| GPA: 2.0	| Hold Status: is on hold
+Name: Lee, Adam 	 | ID: 10001	| GPA: 3.0	| Hold Status: is not on hold
+
+
+Sorted by last name
+Name: Brown, Sam 	 | ID: 11111	| GPA: 2.0	| Hold Status: is on hold
+Name: Doe, Jane 	 | ID: 54321	| GPA: 4.0	| Hold Status: is not on hold
+Name: Lee, Adam 	 | ID: 10001	| GPA: 3.0	| Hold Status: is not on hold
+Name: Smith, Joe 	 | ID: 12345	| GPA: 3.0	| Hold Status: is not on hold
+Name: Sue, Mary 	 | ID: 12321	| GPA: 3.0	| Hold Status: is not on hold
+
+
+Sorted by ID #
+Name: Lee, Adam 	 | ID: 10001	| GPA: 3.0	| Hold Status: is not on hold
+Name: Brown, Sam 	 | ID: 11111	| GPA: 2.0	| Hold Status: is on hold
+Name: Sue, Mary 	 | ID: 12321	| GPA: 3.0	| Hold Status: is not on hold
+Name: Smith, Joe 	 | ID: 12345	| GPA: 3.0	| Hold Status: is not on hold
+Name: Doe, Jane 	 | ID: 54321	| GPA: 4.0	| Hold Status: is not on hold
+
+
+Sorted by GPA
+Name: Doe, Jane 	 | ID: 54321	| GPA: 4.0	| Hold Status: is not on hold
+Name: Sue, Mary 	 | ID: 12321	| GPA: 3.0	| Hold Status: is not on hold
+Name: Smith, Joe 	 | ID: 12345	| GPA: 3.0	| Hold Status: is not on hold
+Name: Lee, Adam 	 | ID: 10001	| GPA: 3.0	| Hold Status: is not on hold
+Name: Brown, Sam 	 | ID: 11111	| GPA: 2.0	| Hold Status: is on hold
+
