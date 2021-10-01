@@ -1,8 +1,9 @@
 package homework2;
 
 import java.util.Arrays;
+import java.io.*;
 
-public class Main { //test// test again smh
+public class Main {
 
 	public static void main(String[] args) {
 //		String fn, String ln, int id, double gpa, boolean hol, int gradeCnt, double rawG)
@@ -27,6 +28,13 @@ public class Main { //test// test again smh
 		System.out.println("Student 1 has a gpa of " + student1.getGpa() + " and is " + student1.holdCheck()); //student1 has a sub 3.0 gpa and is placed on hold
 		System.out.println();
 		
+		try {
+			FileWriter fw = new FileWriter("output.txt", false);
+			PrintWriter pw = new PrintWriter(fw);
+			
+			pw.println("line 1");
+		
+		
 		//3. Sort a set of student objects
 		//By name
 		Student.display(students);
@@ -48,7 +56,7 @@ public class Main { //test// test again smh
 		//1. Sort a random set of integers
 		System.out.println();
 		System.out.println("_____________________________");
-		System.out.println("Sorting a random set of new integers");
+		System.out.println("Sorting a random set of new integers"); pw.print(("Sorting a random set of new integers"));
 		System.out.print("Random set of integers: ");
 		int randInts[] = new int[5];
 		for(int i = 0; i < 5; i++) {
@@ -79,8 +87,11 @@ public class Main { //test// test again smh
 			System.out.print(": \'" + randChars[i] + "\', ");
 		}
 		
-		
-		
+		pw.close();
+		}
+		catch (IOException ioe) {
+			System.out.println(ioe.getMessage());
+		}
 		
 
  }
