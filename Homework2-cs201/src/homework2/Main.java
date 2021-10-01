@@ -72,11 +72,14 @@ public class Main {
 		for(int i = 0; i < randChars.length; i++) {
 			System.out.print(": \'" + randChars[i] + "\', "); pw.print(": \'" + randChars[i] + "\', ");
 		}
+		System.out.println(); pw.println(); System.out.println(); pw.println();
 		
 		
-		//3. Sort a set of student objects
+		
+		//3. Sort a set of student objects 
+		System.out.println("3. Sort a set of student objects"); pw.println("3. Sort a set of student objects");
 		//By name
-		Student.display(students);
+		Student.display(students); pw.println(Student.display(students));
 		Student.sortByName(students);
 		System.out.println();
 		System.out.println("Sorted by last name");
