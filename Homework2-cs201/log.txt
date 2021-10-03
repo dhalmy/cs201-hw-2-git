@@ -1,14 +1,14 @@
 1. Sorting a random set of new integers
-Random set of integers: 2 2 9 1 2 
+Random set of integers: 3 0 7 6 0 
 Sorting random integers high to low:
-[9, 2, 2, 2, 1]
+[7, 6, 3, 0, 0]
 Sorting random integers low to high:
-[1, 2, 2, 2, 9]
+[0, 0, 3, 6, 7]
 
 
 2. Sorting random characters
-Random set of characters:  'k',  '"',  'b',  'y',  '`',  'z',  '?',  '/',  'C',  'l', 
-Sorted set of characters:  '"',  '/',  '?',  'C',  '`',  'b',  'k',  'l',  'y',  'z', 
+Random set of characters:  'P',  '&',  '#',  'O',  '_',  '!',  '9',  '&',  '=',  ':', 
+Sorted set of characters:  '!',  '#',  '&',  '&',  '9',  ':',  '=',  'O',  'P',  '_', 
 
 3. Sort a set of student objects
 Name: Smith, Joe 	 | ID: 12345	| GPA: 3.0	| Hold Status: is not on hold
